@@ -31,6 +31,8 @@ services:
     image: 'jc21/mariadb-aria:latest'
     container_name: npm-db
     restart: always
+    ports:
+      - 6633:3366
     environment:
       MYSQL_ROOT_PASSWORD: 'npm'
       MYSQL_DATABASE: 'npm'
